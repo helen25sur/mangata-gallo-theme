@@ -1,0 +1,113 @@
+/* ==== Variable ==== */
+:root {
+  --max-width-content: 1573px;
+  --min-width-content: 340px;
+  --promo-height: 640px;
+
+  --soft-green: hsl(171, 70%, 91%);
+  --light-green: hsl(162, 29%, 59%);
+  --green: hsl(162, 28%, 48%);
+  --dark-green: hsl(162, 42%, 25%);
+
+  --rose: hsl(344, 66%, 57%);
+
+  --light-grey: hsl(0, 3%, 63%);
+}
+
+/* ==== Promo ==== */
+
+.promo {
+  height: var(--promo-height);
+}
+
+.promo .container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1100px 1fr;
+  background-color: var(--soft-green);
+  overflow: hidden;
+}
+
+.img-products-block {
+  position: relative;
+  width: 1100px;
+  height: var(--promo-height);
+}
+
+.img-products-block img {
+  position: absolute;
+}
+
+.img-products-block img:first-of-type {
+  -webkit-clip-path: polygon(0% 33%, 100% 33%, 75% 93%, 0 93%);
+  clip-path: polygon(0% 33%, 100% 33%, 75% 93%, 0 93%);
+  top: -220px;
+  z-index: 2;
+}
+
+.img-products-block img:nth-of-type(2) {
+  -webkit-clip-path: polygon(23% 38%, 100% 23%, 70% 93%, 0 93%);
+  clip-path: polygon(23% 38%, 100% 23%, 70% 93%, 0 93%);
+  top: -220px;
+  left: 435px;
+  z-index: 3;
+}
+
+.img-products-block img:nth-of-type(3) {
+  -webkit-clip-path: polygon(25% 30%, 100% 30%, 62% 116%, 25% 96%);
+  clip-path: polygon(25% 30%, 100% 30%, 62% 116%, 25% 96%);
+  top: 143px;
+  z-index: 4;
+  left: -144px;
+}
+
+.img-products-block img:nth-of-type(4) {
+  -webkit-clip-path: polygon(29% 30%, 99% 30%, 68% 99%, 0 96%);
+  clip-path: polygon(29% 30%, 99% 30%, 68% 99%, 0 96%);
+  top: 143px;
+  left: 267px;
+  z-index: 5;
+}
+
+.promo-content {
+  color: var(--dark-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -6rem;
+  text-align: center;
+}
+
+.promo-text {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.promo-percent {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.promo-text:nth-of-type(2) {
+  font-weight: 500;
+}
+
+.btn-shop {
+  margin-top: 3rem;
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  background-color: var(--dark-green);
+  color: hsl(0, 0%, 100%);
+  border: 1px solid var(--dark-green);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+
+.btn-shop:hover {
+  background-color: hsl(162deg 42% 15%);
+}

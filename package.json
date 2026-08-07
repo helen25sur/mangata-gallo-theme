@@ -1,0 +1,24 @@
+{
+  "name": "mangata-gallo-jewelry-theme",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/helen25sur/mangata-gallo-theme#readme",
+  "bugs": {
+    "url": "https://github.com/helen25sur/mangata-gallo-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helen25sur/mangata-gallo-theme.git"
+  },
+  "license": "ISC",
+  "author": "Olena Surilova",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start --webpack-src-dir=blocks --output-path=build/blocks",
+    "build": "wp-scripts build --webpack-src-dir=blocks --output-path=build/blocks"
+  },
+  "dependencies": {
+    "@wordpress/scripts": "^34.0.0",
+    "axios": "^1.19.0"
+  }
+}
